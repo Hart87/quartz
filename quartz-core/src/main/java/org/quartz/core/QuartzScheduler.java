@@ -602,6 +602,8 @@ public class QuartzScheduler implements RemotableQuartzScheduler {
         return new Date(initialStart.getTime());
     }
 
+    public Date timeInstantiated() { return initialStart;}
+
     public int numJobsExecuted() {
         return jobMgr.getNumJobsFired();
     }

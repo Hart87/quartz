@@ -18,6 +18,7 @@
 
 package org.quartz;
 
+
 /**
  * The interface to be implemented by classes that want to be informed of major
  * <code>{@link Scheduler}</code> events.
@@ -211,4 +212,6 @@ public interface SchedulerListener {
      * that all jobs, triggers and calendars were deleted.
      */
     void schedulingDataCleared();
+
+
 }
